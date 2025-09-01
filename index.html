@@ -198,9 +198,17 @@ footer.rodape img {
 
   .produto img {
     width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
+  height: auto;
+  object-fit: contain; /* ou cover, dependendo do efeito desejado */
+  display: block;
+  @media (max-width: 600px) {
+  .card {
+    max-width: 100%;
+    padding: 10px;
+   max-height: 200px; /* ou ajuste conforme sua imagem */
+  }}
+}
+  
 
 
     
